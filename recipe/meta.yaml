@@ -1,6 +1,6 @@
 {% set name = "django_coverage_plugin" %}
-{% set version = "1.6.0" %}
-{% set sha256 = "8810678115ea541f85f4fdfa248e2bf703f05ac6740f6dbd9860d11a9861672f" %}
+{% set version = "1.7.0" %}
+{% set sha256 = "589649ffb3480995b9db0958c1de78882649fa62d7c66fbb3582da67472d8dcc" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
