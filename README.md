@@ -1,13 +1,17 @@
-About django_coverage_plugin
-============================
+About django_coverage_plugin-feedstock
+======================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/django_coverage_plugin-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/nedbat/django_coverage_plugin
 
 Package license: Apache 2.0
 
-Feedstock license: BSD 3-Clause
-
 Summary: A plugin for coverage.py to measure Django template execution
+
+Development: https://github.com/nedbat/django_coverage_plugin
+
+Documentation: http://coverage.readthedocs.io/en/latest/plugins.html
 
 A coverage.py plugin to measure the coverage of Django templates. Supported Python versions are 2.7, 3.4, 3.5 and 3.6. Supported Django versions are 1.8 through 1.11. Supported coverage.py versions are 4.0 and higher.
 
@@ -17,8 +21,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3869&branchName=master">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/django_coverage_plugin-feedstock?branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3869&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/django_coverage_plugin-feedstock?branchName=main">
       </a>
     </td>
   </tr>
@@ -38,25 +42,52 @@ Installing `django_coverage_plugin` from the `conda-forge` channel can be achiev
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `django_coverage_plugin` can be installed with:
+Once the `conda-forge` channel has been enabled, `django_coverage_plugin` can be installed with `conda`:
 
 ```
 conda install django_coverage_plugin
 ```
 
-It is possible to list all of the versions of `django_coverage_plugin` available on your platform with:
+or with `mamba`:
+
+```
+mamba install django_coverage_plugin
+```
+
+It is possible to list all of the versions of `django_coverage_plugin` available on your platform with `conda`:
 
 ```
 conda search django_coverage_plugin --channel conda-forge
+```
+
+or with `mamba`:
+
+```
+mamba search django_coverage_plugin --channel conda-forge
+```
+
+Alternatively, `mamba repoquery` may provide more information:
+
+```
+# Search all versions available on your platform:
+mamba repoquery search django_coverage_plugin --channel conda-forge
+
+# List packages depending on `django_coverage_plugin`:
+mamba repoquery whoneeds django_coverage_plugin --channel conda-forge
+
+# List dependencies of `django_coverage_plugin`:
+mamba repoquery depends django_coverage_plugin --channel conda-forge
 ```
 
 
 About conda-forge
 =================
 
-[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
+[![Powered by
+NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](https://numfocus.org)
 
 conda-forge is a community-led conda channel of installable packages.
 In order to provide high-quality builds, the process has been automated into the
@@ -66,10 +97,12 @@ for each of the installable packages. Such a repository is known as a *feedstock
 A feedstock is made up of a conda recipe (the instructions on what and how to build
 the package) and the necessary configurations for automatic building using freely
 available continuous integration services. Thanks to the awesome service provided by
-[CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/)
-and [TravisCI](https://travis-ci.com/) it is possible to build and upload installable
-packages to the [conda-forge](https://anaconda.org/conda-forge)
-[Anaconda-Cloud](https://anaconda.org/) channel for Linux, Windows and OSX respectively.
+[Azure](https://azure.microsoft.com/en-us/services/devops/), [GitHub](https://github.com/),
+[CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
+[Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
+it is possible to build and upload installable packages to the
+[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
 [conda-smithy](https://github.com/conda-forge/conda-smithy) has been developed.
@@ -108,9 +141,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
