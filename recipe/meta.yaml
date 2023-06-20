@@ -18,14 +18,20 @@ build:
 
 requirements:
   host:
+    - python >=3.7
     - pip
-    - python
-    - setuptools
   run:
-    - python
+    - python >=3.7
     - django >=1.8
     - coverage >=4.0
-    - six >=1.4.0
+
+test:
+  imports:
+    - django_coverage_plugin
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/nedbat/django_coverage_plugin
@@ -40,4 +46,4 @@ about:
 extra:
   recipe-maintainers:
     - cshaley
-    - sannykr
+    - rxm7706
