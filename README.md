@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/django_coverage
 
 Home: https://github.com/nedbat/django_coverage_plugin
 
-Package license: Apache 2.0
+Package license: Apache-2.0
 
 Summary: A plugin for coverage.py to measure Django template execution
 
@@ -150,5 +150,5 @@ Feedstock Maintainers
 =====================
 
 * [@cshaley](https://github.com/cshaley/)
-* [@sannykr](https://github.com/sannykr/)
+* [@rxm7706](https://github.com/rxm7706/)
 
