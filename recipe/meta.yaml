@@ -1,6 +1,6 @@
 {% set name = "django_coverage_plugin" %}
-{% set version = "3.0.0" %}
-{% set sha256 = "c063d8d49ba2da30fe95d91cf3f0f9f659b55c3f80d4a029d619b2b3144b1206" %}
+{% set version = "3.1.0" %}
+{% set sha256 = "223d34bf92bebadcb8b7b89932480e41c7bd98b44a8156934488fbe7f4a71f99" %}
 
 package:
   name: {{ name|lower }}
