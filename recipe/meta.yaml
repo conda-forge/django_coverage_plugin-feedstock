@@ -13,15 +13,16 @@ source:
 
 build:
   noarch: python
-  number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  number: 1
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
+    - setuptools
   run:
-    - python >=3.7
+    - python >=3.8
     - django >=1.8
     - coverage >=4.0
 
@@ -47,4 +48,3 @@ extra:
   recipe-maintainers:
     - rxm7706
     - cshaley
-    - rxm7706
