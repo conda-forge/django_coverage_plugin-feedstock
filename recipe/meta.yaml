@@ -1,20 +1,18 @@
 {% set name = "django_coverage_plugin" %}
 {% set version = "3.1.0" %}
-{% set sha256 = "223d34bf92bebadcb8b7b89932480e41c7bd98b44a8156934488fbe7f4a71f99" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/django_coverage_plugin-{{ version }}.tar.gz
+  sha256: 223d34bf92bebadcb8b7b89932480e41c7bd98b44a8156934488fbe7f4a71f99
 
 build:
   noarch: python
-  number: 2
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 2
 
 requirements:
   host:
