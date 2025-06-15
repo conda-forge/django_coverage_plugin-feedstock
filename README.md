@@ -33,7 +33,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-django_coverage_plugin-green.svg)](https://anaconda.org/conda-forge/django_coverage_plugin) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/django_coverage_plugin.svg)](https://anaconda.org/conda-forge/django_coverage_plugin) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/django_coverage_plugin.svg)](https://anaconda.org/conda-forge/django_coverage_plugin) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/django_coverage_plugin.svg)](https://anaconda.org/conda-forge/django_coverage_plugin) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-django__coverage__plugin-green.svg)](https://anaconda.org/conda-forge/django_coverage_plugin) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/django_coverage_plugin.svg)](https://anaconda.org/conda-forge/django_coverage_plugin) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/django_coverage_plugin.svg)](https://anaconda.org/conda-forge/django_coverage_plugin) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/django_coverage_plugin.svg)](https://anaconda.org/conda-forge/django_coverage_plugin) |
 
 Installing django_coverage_plugin
 =================================
