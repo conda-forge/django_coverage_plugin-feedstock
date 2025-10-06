@@ -1,5 +1,5 @@
 {% set name = "django_coverage_plugin" %}
-{% set version = "3.1.1" %}
+{% set version = "3.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/django_coverage_plugin-{{ version }}.tar.gz
-  sha256: d30334c3cb00ab65449ce779ed7c4cd1263331becf4440e03f8b287203a81d41
+  sha256: 0e1460294ecd4b192bd09788ab9ad9380d9b8c9b45925b408ce6c620ac352585
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - django >=1.8
+    - django
     - coverage
 
 test:
