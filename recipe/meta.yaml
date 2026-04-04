@@ -1,5 +1,5 @@
 {% set name = "django_coverage_plugin" %}
-{% set version = "3.2.0" %}
+{% set version = "3.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/django_coverage_plugin-{{ version }}.tar.gz
-  sha256: 0e1460294ecd4b192bd09788ab9ad9380d9b8c9b45925b408ce6c620ac352585
+  sha256: fcc507ee02f3a8f7c1d79b6eba1bafebb4a95b5055801987b715f4f88270c441
 
 build:
   noarch: python
